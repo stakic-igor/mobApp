@@ -1,0 +1,11 @@
+.footer {
+    background: $red;
+    box-sizing: border-box;
+    padding: 0.500rem 0;
+    @include position(absolute, $bottom: 0);
+    &__paragraph {
+        color: $white;
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+}
