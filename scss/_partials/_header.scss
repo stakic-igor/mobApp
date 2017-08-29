@@ -1,0 +1,43 @@
+.header {
+  z-index: 30;
+  @include position(relative);
+}
+.hamburger {
+  cursor: pointer;
+  height: 1.250rem;
+  @include position(absolute, $top: 1rem, $left:0);
+  width: 2rem;
+  &__line {
+    background-color: black;
+    height: 0.125rem;
+    @include position(absolute);
+    transition: all 320ms ease-in;
+    width: 100%;
+    &:first-child{
+      top:0%;
+    }
+    &:nth-child(2) {
+      top:50%;
+    }
+    &:last-child {
+      top:100%;
+    }
+  }
+  &--active &__line {
+    &:first-child{
+      transform: 
+        translateY(0.5em)
+        translateX(0)
+        rotate(135deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:last-child {
+      transform: 
+        translateY(-.75em)
+        translateX(0)
+        rotate(-135deg);
+    }
+  }
+}

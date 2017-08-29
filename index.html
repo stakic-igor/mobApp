@@ -7,17 +7,23 @@
     <title>Traintour Appenzellerland</title>
     <link rel="stylesheet" href="css/grid960.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
 </head>
 <body>
-    
-    <section class="container container_12">
-        <div class="grid_12">
-                <img src="img/iphone-mockup.png" alt="Phone" class="mockup">
+    <header class="header container_12">
+        <div class="grid_1">
+            <div class="hamburger">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </div><!-- end hambrger -->
         </div>
-            
+    </header><!-- header -->
+    <div class="wrap">
+    <section class="container container_12">
+
     </section><!-- container /960px wide -->
-    
-    <img src="img/phones.png" alt="Phones" class="phones">
     <footer class="footer full-width">
         <section class="container_12">
             <div class="grid_12">
@@ -26,7 +32,16 @@
                     In die Appenzeller Bahnen einsteigen, Kopfhorer aufsetzen, Fensterplats-App starte - und los geht's.
                 </p>    
             </div>    
-        </section>                
+        </section>  
+        </div>             
     </footer><!-- full-width -->
+    <script>
+        $('.hamburger').on('click', function() {
+            $('.hero').toggleClass('hero--active');
+            $(this).toggleClass('hamburger--active');
+            $('.wrap').toggle();
+        });
+        
+    </script>
 </body>
 </html>

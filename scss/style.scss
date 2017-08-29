@@ -2,6 +2,7 @@
         '_helpers/_vars',
         '_moduls/_colors',
         '_helpers/_mixin',
+        '_partials/_header',
         '_partials/_footer';
 
 body {
@@ -15,11 +16,6 @@ body {
 .container {
     height: 100vh;
     @include position(relative);
-}
-.mockup {
-    height: 72%;
-    @include position(absolute, $right:-150px, $bottom: 0.500rem);
-    z-index: 10;
 }
 .phones {
     width: 512px;

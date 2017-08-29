@@ -52,6 +52,52 @@ table {
   border-spacing: 0;
 }
 
+.header {
+  z-index: 30;
+  position: relative;
+}
+
+.hamburger {
+  cursor: pointer;
+  height: 1.250rem;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 2rem;
+}
+
+.hamburger__line {
+  background-color: black;
+  height: 0.125rem;
+  position: absolute;
+  transition: all 320ms ease-in;
+  width: 100%;
+}
+
+.hamburger__line:first-child {
+  top: 0%;
+}
+
+.hamburger__line:nth-child(2) {
+  top: 50%;
+}
+
+.hamburger__line:last-child {
+  top: 100%;
+}
+
+.hamburger--active .hamburger__line:first-child {
+  transform: translateY(0.5em) translateX(0) rotate(135deg);
+}
+
+.hamburger--active .hamburger__line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger--active .hamburger__line:last-child {
+  transform: translateY(-0.75em) translateX(0) rotate(-135deg);
+}
+
 .footer {
   background: red;
   box-sizing: border-box;
@@ -79,14 +125,6 @@ body {
 .container {
   height: 100vh;
   position: relative;
-}
-
-.mockup {
-  height: 72%;
-  position: absolute;
-  right: -150px;
-  bottom: 0.5rem;
-  z-index: 10;
 }
 
 .phones {
