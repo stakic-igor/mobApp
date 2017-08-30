@@ -1,4 +1,5 @@
-.header {
+.header { 
+  height: 80px;
   z-index: 30;
   @include position(relative);
 }

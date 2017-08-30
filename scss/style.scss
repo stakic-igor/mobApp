@@ -3,6 +3,8 @@
         '_moduls/_colors',
         '_helpers/_mixin',
         '_partials/_header',
+        '_partials/_sub-pages',
+        '_partials/_menu',
         '_partials/_footer';
 
 body {
@@ -14,7 +16,7 @@ body {
     width: 100%;
 }
 .container {
-    height: 100vh;
+    height: calc( 100vh - 80px);
     @include position(relative);
 }
 .phones {

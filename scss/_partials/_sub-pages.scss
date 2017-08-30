@@ -1,0 +1,10 @@
+.sub-page {
+    background-image: url(../img/bg_blur.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: none;
+    padding-top: 80px;
+    height: calc( 100vh - 80px);
+    width: 100%;
+    @include position(absolute, $top: 0, $left: 0);
+}

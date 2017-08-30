@@ -53,6 +53,7 @@ table {
 }
 
 .header {
+  height: 80px;
   z-index: 30;
   position: relative;
 }
@@ -98,6 +99,24 @@ table {
   transform: translateY(-0.75em) translateX(0) rotate(-135deg);
 }
 
+.sub-page {
+  background-image: url(../img/bg_blur.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: none;
+  padding-top: 80px;
+  height: calc( 100vh - 80px);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main_menu__link {
+  text-decoration: none;
+  color: white;
+}
+
 .footer {
   background: red;
   box-sizing: border-box;
@@ -123,7 +142,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: calc( 100vh - 80px);
   position: relative;
 }
 
