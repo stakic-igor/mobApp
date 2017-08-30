@@ -2,6 +2,9 @@
   height: 80px;
   z-index: 30;
   @include position(relative);
+  & > div[class^="grid"] {
+    height: 100%;
+  }
 }
 .hamburger {
   cursor: pointer;

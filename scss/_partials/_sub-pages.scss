@@ -8,7 +8,11 @@
     width: 100%;
     @include position(absolute, $top: 0, $left: 0);
     &__header {
+        color: $white;
         display: none;
+        font-family: 'Univers LT Std';
+        font-size: .95rem;
+        line-height: 80px;
     }
     &__header-2 {
         font-family: 'Univers LT Std';
