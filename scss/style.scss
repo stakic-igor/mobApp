@@ -1,25 +1,28 @@
-@import '_vendors/_reset',
-        '_helpers/_vars',
-        '_moduls/_colors',
-        '_moduls/_typography',
+@import '_helpers/_vars',
         '_helpers/_mixin',
-        '_partials/_header',
+        '_vendors/_reset',
+        '_moduls/_grid',
+        '_moduls/_colors',
+        '_moduls/_typography';
+body {
+    background: #dedede;
+    font-size: 16px;
+    min-height: 100vh;
+    //overflow: hidden;
+    @include position(relative);
+}
+@import '_partials/_header',
         '_partials/_sub-pages',
         '_partials/_menu',
         '_partials/_accordion',
         '_partials/_contact-form',
-        '_partials/_footer';
+        '_partials/_footer',
+        '_partials/_media-queries';
 
-body {
-    font-size: 16px;
-    height: 100vh;
-    overflow: hidden;
-    @include position(relative);
-}
 .full-width {
     width: 100%;
 }
-.container {
+.content-wrap {
     height: calc( 100vh - 80px);
     @include position(relative);
 }

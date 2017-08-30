@@ -15,7 +15,7 @@ return gulp.src('scss/**/*.scss')
 });
 
 gulp.task('autoprefixer', function() {
-return gulp.src('css/base.css')
+return gulp.src('css/style.css')
 .pipe(autoprefixer ({
   browsers: ['last 2 versions'],
   cascade: false

@@ -52,6 +52,180 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 960px;
+  max-width: 100%;
+}
+
+.container--fluid {
+  width: 100%;
+}
+
+.row {
+  font-size: 0;
+}
+
+.col-1 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 8.33333%;
+}
+
+.col-2 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 16.66667%;
+}
+
+.col-3 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 25%;
+}
+
+.col-4 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 33.33333%;
+}
+
+.col-5 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 41.66667%;
+}
+
+.col-6 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 50%;
+}
+
+.col-7 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 58.33333%;
+}
+
+.col-8 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 66.66667%;
+}
+
+.col-9 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 75%;
+}
+
+.col-10 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 83.33333%;
+}
+
+.col-11 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 91.66667%;
+}
+
+.col-12 {
+  box-sizing: border-box;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .col-7 {
+    width: 100%;
+  }
+  .col-8 {
+    width: 100%;
+  }
+  .col-9 {
+    width: 100%;
+  }
+  .col-10 {
+    width: 100%;
+  }
+  .col-11 {
+    width: 100%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
 @font-face {
   font-family: 'Sorren';
   src: url("../fonts/Sorren-Medium.eot");
@@ -84,6 +258,13 @@ table {
   font-style: normal;
 }
 
+body {
+  background: #dedede;
+  font-size: 16px;
+  min-height: 100vh;
+  position: relative;
+}
+
 .header {
   height: 80px;
   z-index: 30;
@@ -104,7 +285,7 @@ table {
 }
 
 .hamburger__line {
-  background-color: black;
+  background-color: white;
   height: 0.125rem;
   position: absolute;
   transition: all 320ms ease-in;
@@ -119,7 +300,7 @@ table {
   top: 50%;
 }
 
-.hamburger__line:last-child {
+.hamburger__line:nth-child(3) {
   top: 100%;
 }
 
@@ -131,8 +312,15 @@ table {
   opacity: 0;
 }
 
-.hamburger--active .hamburger__line:last-child {
+.hamburger--active .hamburger__line:nth-child(3) {
   transform: translateY(-0.75em) translateX(0) rotate(-135deg);
+}
+
+.hamburger__text {
+  position: absolute;
+  top: 24px;
+  left: -2px;
+  color: white;
 }
 
 .sub-page {
@@ -141,7 +329,6 @@ table {
   background-size: cover;
   display: none;
   padding-top: 80px;
-  height: calc( 100vh - 80px);
   width: 100%;
   position: absolute;
   top: 0;
@@ -331,6 +518,7 @@ table {
 
 .input-textarea {
   background-color: transparent;
+  border: 1px solid white;
   border-radius: .500rem;
   box-sizing: border-box;
   color: white;
@@ -382,18 +570,11 @@ table {
   line-height: 1.4;
 }
 
-body {
-  font-size: 16px;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
 .full-width {
   width: 100%;
 }
 
-.container {
+.content-wrap {
   height: calc( 100vh - 80px);
   position: relative;
 }
