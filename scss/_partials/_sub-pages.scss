@@ -46,7 +46,8 @@
         width: 35%;
     }
     &__map-img {
-        margin-top: 1.75rem;
+        display: block;
+        margin: 1.75rem auto 0 auto;
         width: 100%;
         height: auto;
     }
