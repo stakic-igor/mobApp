@@ -1,9 +1,15 @@
 .main_menu {
 
     &__list {}
-    &__item {}
+    &__item {
+        
+    }
     &__link {
         text-decoration: none;
         color: $white;
+
+    }
+    &--active {
+        color: $red;
     }
 }

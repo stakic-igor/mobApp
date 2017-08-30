@@ -1,0 +1,24 @@
+.accordion-toggle {
+    border-top: 1px solid $white;
+    box-sizing: border-box;
+    color: $white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    padding: .875rem 0;
+}
+.accordion-content {
+    display: none;
+    border-bottom: 1px solid $white;
+    &__paragraph {
+        color: $white;
+        font-size: .7rem;
+        line-height: 1.2rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        &__link {
+            color: $red;
+            text-decoration: none;
+        }
+    }
+}
+.accordion-content.default {display: block;}

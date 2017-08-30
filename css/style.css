@@ -61,7 +61,7 @@ table {
 .hamburger {
   cursor: pointer;
   height: 1.250rem;
-  position: absolute;
+  position: relative;
   top: 1rem;
   left: 0;
   width: 2rem;
@@ -112,9 +112,78 @@ table {
   left: 0;
 }
 
+.sub-page__header {
+  display: none;
+}
+
+.sub-page__header-2 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: white;
+  margin-bottom: 1.375rem;
+}
+
+.sub-page__paragraph {
+  color: white;
+  font-size: .75rem;
+  line-height: 1.2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.sub-page__paragraph--teaser {
+  font-size: .95rem;
+  line-height: 1.45rem;
+}
+
+.sub-page__paragraph__link {
+  color: red;
+}
+
+.sub-page__separator {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 35%;
+}
+
 .main_menu__link {
   text-decoration: none;
   color: white;
+}
+
+.main_menu--active {
+  color: red;
+}
+
+.accordion-toggle {
+  border-top: 1px solid white;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: .875rem 0;
+}
+
+.accordion-content {
+  display: none;
+  border-bottom: 1px solid white;
+}
+
+.accordion-content__paragraph {
+  color: white;
+  font-size: .7rem;
+  line-height: 1.2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.accordion-content__paragraph__link {
+  color: red;
+  text-decoration: none;
+}
+
+.accordion-content.default {
+  display: block;
 }
 
 .footer {
