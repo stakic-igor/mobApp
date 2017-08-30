@@ -1,14 +1,17 @@
 .accordion-toggle {
     border-top: 1px solid $white;
+    border-bottom: 1px solid $white;    
     box-sizing: border-box;
     color: $white;
     cursor: pointer;
+    font-family: 'Univers LT Std';
     font-size: 0.95rem;
     padding: .875rem 0;
 }
 .accordion-content {
-    display: none;
     border-bottom: 1px solid $white;
+    display: none;
+    font-family: 'Univers LT Std';
     &__paragraph {
         color: $white;
         font-size: .7rem;

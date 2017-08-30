@@ -10,7 +10,8 @@
     &__header {
         display: none;
     }
-    &__header-2{
+    &__header-2 {
+        font-family: 'Univers LT Std';
         font-size: 1.4rem;
         line-height: 1.6rem;
         color: $white;
@@ -18,6 +19,7 @@
     }
     &__paragraph {
         color: $white;
+        font-family: 'Univers LT Std';
         font-size: .75rem;
         line-height: 1.2rem;
         margin-top: 1.25rem;
@@ -25,6 +27,9 @@
         &--teaser {
             font-size: .95rem;
             line-height: 1.45rem;
+            text-align: center;
+            margin-left: 5.6rem;
+            margin-right: 5.6rem;
         }
         &__link {
             color: $red;
@@ -35,5 +40,10 @@
         margin-top: 20px;
         margin-bottom: 20px;
         width: 35%;
+    }
+    &__map-img {
+        margin-top: 1.75rem;
+        width: 100%;
+        height: auto;
     }
 }

@@ -1,6 +1,6 @@
 $('.hamburger').on('click', function() {
     var pageTitle = $('.sub-page__header');
-    $("#app").addClass('main_menu--active');
+    $("#app").addClass('main-menu--active');
     $('.hero').toggleClass('hero--active');
     $(this).toggleClass('hamburger--active');
     $('#menuOpen').toggle();

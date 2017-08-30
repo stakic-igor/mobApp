@@ -1,6 +1,7 @@
 @import '_vendors/_reset',
         '_helpers/_vars',
         '_moduls/_colors',
+        '_moduls/_typography',
         '_helpers/_mixin',
         '_partials/_header',
         '_partials/_sub-pages',
@@ -11,6 +12,7 @@
 body {
     font-size: 16px;
     height: 100vh;
+    overflow: hidden;
     @include position(relative);
 }
 .full-width {
@@ -25,4 +27,9 @@ body {
     height: auto;
     z-index: 20;
     @include position(absolute, $right: 0, $bottom: 0.500rem);
+}
+.powered {
+    transform: translateY(-50%);
+    z-index: 9000;
+    @include position(fixed, $top: 50%, $right: 0);
 }

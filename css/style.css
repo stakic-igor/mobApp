@@ -52,6 +52,38 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'Sorren';
+  src: url("../fonts/Sorren-Medium.eot");
+  src: url("../fonts/Sorren-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Sorren-Medium.woff2") format("woff2"), url("../fonts/Sorren-Medium.woff") format("woff"), url("../fonts/Sorren-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers LT Std';
+  src: url("../fonts/UniversLTStd.eot");
+  src: url("../fonts/UniversLTStd.eot?#iefix") format("embedded-opentype"), url("../fonts/UniversLTStd.woff2") format("woff2"), url("../fonts/UniversLTStd.woff") format("woff"), url("../fonts/UniversLTStd.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers LT Std';
+  src: url("../fonts/UniversLTStd-BoldEx.eot");
+  src: url("../fonts/UniversLTStd-BoldEx.eot?#iefix") format("embedded-opentype"), url("../fonts/UniversLTStd-BoldEx.woff2") format("woff2"), url("../fonts/UniversLTStd-BoldEx.woff") format("woff"), url("../fonts/UniversLTStd-BoldEx.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url("../fonts/CircularStd-Black.eot");
+  src: url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Black.woff2") format("woff2"), url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 .header {
   height: 80px;
   z-index: 30;
@@ -117,6 +149,7 @@ table {
 }
 
 .sub-page__header-2 {
+  font-family: 'Univers LT Std';
   font-size: 1.4rem;
   line-height: 1.6rem;
   color: white;
@@ -125,6 +158,7 @@ table {
 
 .sub-page__paragraph {
   color: white;
+  font-family: 'Univers LT Std';
   font-size: .75rem;
   line-height: 1.2rem;
   margin-top: 1.25rem;
@@ -134,10 +168,14 @@ table {
 .sub-page__paragraph--teaser {
   font-size: .95rem;
   line-height: 1.45rem;
+  text-align: center;
+  margin-left: 5.6rem;
+  margin-right: 5.6rem;
 }
 
 .sub-page__paragraph__link {
   color: red;
+  text-decoration: none;
 }
 
 .sub-page__separator {
@@ -146,27 +184,71 @@ table {
   width: 35%;
 }
 
-.main_menu__link {
+.sub-page__map-img {
+  margin-top: 1.75rem;
+  width: 100%;
+  height: auto;
+}
+
+.main-menu-wrap {
+  position: relative;
+  height: calc( 100vh - 80px);
+}
+
+.main-menu {
+  font-family: 'Sorren';
+  letter-spacing: 10px;
+}
+
+.main-menu__link {
+  font-size: 3rem;
   text-decoration: none;
   color: white;
 }
 
-.main_menu--active {
+.main-menu--active {
   color: red;
+}
+
+.download-app {
+  position: absolute;
+  bottom: 10%;
+}
+
+.download-app__title {
+  font-family: 'Univers LT Std';
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.download-app__link {
+  color: white;
+  display: inline-block;
+  font-family: 'Univers LT Std';
+  font-size: .5rem;
+  line-height: .95rem;
+  text-decoration: none;
+  margin-right: .5rem;
+  width: 3rem;
 }
 
 .accordion-toggle {
   border-top: 1px solid white;
+  border-bottom: 1px solid white;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
+  font-family: 'Univers LT Std';
   font-size: 0.95rem;
   padding: .875rem 0;
 }
 
 .accordion-content {
-  display: none;
   border-bottom: 1px solid white;
+  display: none;
+  font-family: 'Univers LT Std';
 }
 
 .accordion-content__paragraph {
@@ -189,6 +271,7 @@ table {
 .footer {
   background: red;
   box-sizing: border-box;
+  font-family: 'Univers LT Std';
   padding: 0.500rem 0;
   position: absolute;
   bottom: 0;
@@ -203,6 +286,7 @@ table {
 body {
   font-size: 16px;
   height: 100vh;
+  overflow: hidden;
   position: relative;
 }
 
@@ -222,6 +306,14 @@ body {
   position: absolute;
   right: 0;
   bottom: 0.5rem;
+}
+
+.powered {
+  transform: translateY(-50%);
+  z-index: 9000;
+  position: fixed;
+  top: 50%;
+  right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

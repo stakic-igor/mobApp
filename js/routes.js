@@ -8,8 +8,8 @@ $(function () {
           if ($(this).attr("id") == "app")
           {
             pageTitle.text('Die App');
-            $("#app").addClass('main_menu--active');
-            $("#touren, #tickets, #faq, #kontakt").removeClass('main_menu--active');
+            $("#app").addClass('main-menu--active');
+            $("#touren, #tickets, #faq, #kontakt").removeClass('main-menu--active');
             $(".app").show();
             $(".touren").hide();
             $(".tickets").hide();
@@ -19,8 +19,8 @@ $(function () {
           else if ($(this).attr("id") == "touren")
             { 
               pageTitle.text('Die Touren');
-              $("#touren").addClass('main_menu--active');
-              $("#app, #tickets, #faq, #kontakt").removeClass('main_menu--active');
+              $("#touren").addClass('main-menu--active');
+              $("#app, #tickets, #faq, #kontakt").removeClass('main-menu--active');
               $(".app").hide();
               $(".faq").hide();
               $(".touren").show();
@@ -30,8 +30,8 @@ $(function () {
             else if ($(this).attr("id") == "tickets")
                 {
                   pageTitle.text('Das Tickets');
-                  $("#tickets").addClass('main_menu--active');
-                  $("#app, #touren, #faq, #kontakt").removeClass('main_menu--active');
+                  $("#tickets").addClass('main-menu--active');
+                  $("#app, #touren, #faq, #kontakt").removeClass('main-menu--active');
                   $(".app").hide();
                   $(".faq").hide();
                   $(".touren").hide();
@@ -41,8 +41,8 @@ $(function () {
                 else if ($(this).attr("id") == "faq")
                     { 
                       pageTitle.text('Die Fragen und Antworten');
-                      $("#faq").addClass('main_menu--active');
-                      $("#app, #touren, #tickets, #kontakt").removeClass('main_menu--active');
+                      $("#faq").addClass('main-menu--active');
+                      $("#app, #touren, #tickets, #kontakt").removeClass('main-menu--active');
                       $(".app").hide();
                       $(".faq").show();
                       $(".touren").hide();
@@ -51,8 +51,8 @@ $(function () {
                     }
             else {
                 pageTitle.text('Der Kontakt');
-                $("#kontakt").addClass('main_menu--active');
-                $("#app, #touren, #faq, #tickets").removeClass('main_menu--active');
+                $("#kontakt").addClass('main-menu--active');
+                $("#app, #touren, #faq, #tickets").removeClass('main-menu--active');
                 $(".app").hide();
                 $(".faq").hide();
                 $(".touren").hide();
