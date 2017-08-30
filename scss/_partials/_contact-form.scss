@@ -1,0 +1,80 @@
+::placeholder {
+  color: $white;
+  font-family: 'Univers LT Std';
+}
+.contact-form {
+  display: block;
+  width: 100%;
+}
+.form-group {
+  font-size: 0;
+  margin-top: .750rem;
+  width: 100%;
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+.label-block {
+  display: block;
+  color: $white;
+  font-family: 'Univers LT Std';
+  font-size: .75rem;
+  margin-bottom: 10px;
+}
+.label-inline {
+  @extend .label-block;
+  display: inline;
+  margin-right: .500rem;
+}
+.input-text {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid $white;
+  box-sizing: border-box;
+  color: $white;
+  display: block;
+  font-family: 'Univers LT Std';
+  font-size: .75rem;
+  padding-bottom: 10px;
+  width: 100%;
+}
+.input-radio {
+  vertical-align: bottom;
+  margin-right: .250rem;
+}
+.input-textarea {
+  background-color: transparent;
+  border-radius: .500rem;
+  box-sizing: border-box;
+  color: $white;
+  display: block;
+  font-family: 'Univers LT Std';
+  font-size: .75rem;
+  height: 9rem;
+  width: 100%;
+}
+.btn {
+  background-color: $white;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: $magenta;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .95rem;
+  font-family: 'Univers LT Std';
+  padding: 5px 25px;
+  transition: all 280ms ease-in;
+  &:focus, &:hover {
+    background-color: transparent;
+    border: 1px solid $white;
+  }
+}
+.submit-info {
+  color: $white;
+  font-family: 'Univers LT Std';
+  font-size: .75rem;
+  float: right;
+}
