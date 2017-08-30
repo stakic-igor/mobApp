@@ -2,7 +2,7 @@
   height: 80px;
   z-index: 30;
   @include position(relative);
-  & > div[class^="grid"] {
+  & > div[class^="col"] {
     height: 100%;
   }
 }

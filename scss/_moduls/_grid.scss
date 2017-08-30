@@ -27,7 +27,7 @@ $gutter: 1rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $small) {
     @for $i from 1 through $colsNo {
         .#{$col}-#{$i} {
             width: 100%;

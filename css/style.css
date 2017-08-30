@@ -55,6 +55,7 @@ table {
 .container {
   box-sizing: border-box;
   margin: 0 auto;
+  font-size: 0;
   width: 960px;
   max-width: 100%;
 }
@@ -271,7 +272,7 @@ body {
   position: relative;
 }
 
-.header > div[class^="grid"] {
+.header > div[class^="col"] {
   height: 100%;
 }
 
@@ -575,7 +576,7 @@ body {
 }
 
 .content-wrap {
-  height: calc( 100vh - 80px);
+  min-height: 100vh;
   position: relative;
 }
 
