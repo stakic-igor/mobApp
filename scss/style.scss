@@ -28,6 +28,9 @@ body {
     min-height: calc( 100vh - 80px);
     @include position(relative);
 }
+.main {
+    @include position(relative);
+}
 .phones {
     width: 512px;
     height: auto;
