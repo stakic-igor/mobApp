@@ -23,22 +23,35 @@
     }
 }
 .download-app {
-    @include position(absolute, $bottom: 10%);
+    @include position(absolute);
     &__title {
         font-family: 'Univers LT Std';
         color: $white;
         font-size: 1.4rem;
         line-height: 1.6rem;
-        margin-bottom: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: .500rem;
     }
     &__link {
-        color: $white;
         display: inline-block;
         font-family: 'Univers LT Std';
-        font-size: .5rem;
         line-height: .95rem;
         text-decoration: none;
         margin-right: .5rem;
-        width: 3rem;
+        & > span {
+            color: $white;
+            font-size: .75rem;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    &__img {
+        vertical-align: middle;
+        margin-right: .5rem;
+    }
+    &__info-link {
+        font-family: 'Univers LT Std';
+        line-height: .95rem;
+        color: $red;
     }
 }

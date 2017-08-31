@@ -427,7 +427,6 @@ body {
 
 .download-app {
   position: absolute;
-  bottom: 10%;
 }
 
 .download-app__title {
@@ -435,18 +434,34 @@ body {
   color: white;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: .500rem;
 }
 
 .download-app__link {
-  color: white;
   display: inline-block;
   font-family: 'Univers LT Std';
-  font-size: .5rem;
   line-height: .95rem;
   text-decoration: none;
   margin-right: .5rem;
-  width: 3rem;
+}
+
+.download-app__link > span {
+  color: white;
+  font-size: .75rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.download-app__img {
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+.download-app__info-link {
+  font-family: 'Univers LT Std';
+  line-height: .95rem;
+  color: red;
 }
 
 .accordion-toggle {
