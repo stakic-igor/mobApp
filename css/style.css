@@ -318,9 +318,10 @@ body {
 
 .hamburger__text {
   position: absolute;
-  top: 24px;
-  left: -2px;
+  top: 2rem;
+  left: -4px;
   color: white;
+  font-family: 'Univers LT Std';
 }
 
 .sub-page {
@@ -441,6 +442,12 @@ body {
   padding: .875rem 0;
 }
 
+.accordion-toggle:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
 .accordion-content {
   border-bottom: 1px solid white;
   display: none;
@@ -462,6 +469,15 @@ body {
 
 .accordion-content.default {
   display: block;
+}
+
+.accordion__question {
+  display: inline-block;
+  width: 80%;
+}
+
+.accordion__img {
+  float: right;
 }
 
 ::placeholder {
@@ -574,6 +590,23 @@ body {
 @media only screen and (max-width: 1366px) {
   .sub-page__map-img {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .sub-page__map-img {
+    width: 75%;
+  }
+  .sub-page__paragraph--teaser {
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+  }
+  .download-app {
+    position: relative;
+    bottom: -10%;
+  }
+  .footer {
+    position: static;
   }
 }
 

@@ -7,6 +7,11 @@
     font-family: 'Univers LT Std';
     font-size: 0.95rem;
     padding: .875rem 0;
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
 }
 .accordion-content {
     border-bottom: 1px solid $white;
@@ -25,3 +30,12 @@
     }
 }
 .accordion-content.default {display: block;}
+.accordion {
+    &__question {
+        display: inline-block;
+        width: 80%;
+    }
+    &__img{
+        float: right;
+    }
+}
