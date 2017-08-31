@@ -467,6 +467,19 @@ body {
   text-decoration: none;
 }
 
+.accordion-list {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.accordion-item {
+  color: white;
+  font-size: .7rem;
+  line-height: 1.2rem;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+}
+
 .accordion-content.default {
   display: block;
 }
@@ -626,7 +639,6 @@ body {
 .content-wrap {
   min-height: calc( 100vh - 80px);
   position: relative;
-  padding-bottom: 40px;
 }
 
 .phones {

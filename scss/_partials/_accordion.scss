@@ -29,6 +29,17 @@
         }
     }
 }
+.accordion-list {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+.accordion-item {
+    color: $white;
+    font-size: .7rem;
+    line-height: 1.2rem;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
 .accordion-content.default {display: block;}
 .accordion {
     &__question {
