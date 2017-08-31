@@ -1,11 +1,26 @@
 @media only screen and (max-width: $laptop) {
+    .phones {
+        width: 230px;
+        bottom: 34px;
+    }
+    .iphone {
+        width: 270px;
+        bottom: 30px;
+    }
     .sub-page {
         &__map-img {
             width: 80%;
         }
     }
 }
-@media only screen and (max-width:979px) {}
+@media only screen and (max-width:979px) {
+    .phones {
+        display: none;
+    }
+    .iphone {
+        display: none;
+    }
+}
 @media only screen and (max-width:860px) {}
 @media only screen and (max-width: $tablet) {}
 @media only screen and (max-width:640px) {

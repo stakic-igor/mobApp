@@ -23,7 +23,7 @@
     }
 }
 .download-app {
-    @include position(absolute);
+    @include position(absolute, $bottom: 10%);
     &__title {
         font-family: 'Univers LT Std';
         color: $white;

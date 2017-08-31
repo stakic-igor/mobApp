@@ -427,6 +427,7 @@ body {
 
 .download-app {
   position: absolute;
+  bottom: 10%;
 }
 
 .download-app__title {
@@ -594,7 +595,7 @@ body {
 .input-textarea {
   background-color: transparent;
   border: 1px solid white;
-  border-radius: .500rem;
+  border-radius: 0.5rem !important;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: white;
@@ -703,7 +704,7 @@ body {
   border: 1px solid white;
   background: transparent;
   font-size: 1rem;
-  color: white;
+  color: red;
   height: 36px;
   vertical-align: middle;
   padding-left: .500rem;
@@ -722,13 +723,16 @@ body {
   width: 36px;
 }
 
+.newsletter__btn:hover .newsletter__btn__img {
+  color: red;
+}
+
 .footer {
   background: red;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Univers LT Std';
   padding: 0.500rem 0;
-  height: 68px;
   position: absolute;
   bottom: 0;
 }
@@ -737,26 +741,6 @@ body {
   color: white;
   font-size: 1rem;
   line-height: 1.2;
-}
-
-@media only screen and (max-width: 1366px) {
-  .sub-page__map-img {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .sub-page__map-img {
-    width: 75%;
-  }
-  .sub-page__paragraph--teaser {
-    margin-left: 2.8rem;
-    margin-right: 2.8rem;
-  }
-  .download-app {
-    position: relative;
-    bottom: -10%;
-  }
 }
 
 .full-width {
@@ -804,4 +788,41 @@ body {
 .app, .touren, .tickets, .faq, .kontakt {
   z-index: 6001;
   position: relative;
+}
+
+@media only screen and (max-width: 1366px) {
+  .phones {
+    width: 230px;
+    bottom: 34px;
+  }
+  .iphone {
+    width: 270px;
+    bottom: 30px;
+  }
+  .sub-page__map-img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  .phones {
+    display: none;
+  }
+  .iphone {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .sub-page__map-img {
+    width: 75%;
+  }
+  .sub-page__paragraph--teaser {
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+  }
+  .download-app {
+    position: relative;
+    bottom: -10%;
+  }
 }

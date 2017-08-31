@@ -51,7 +51,7 @@
         border:1px solid $white;
         background: transparent;
         font-size: 1rem;
-        color: $white;
+        color: $red;
         //display: inline-block;
         height: 36px;
         vertical-align: middle;
@@ -67,5 +67,8 @@
         vertical-align: middle;
         height: 36px;
         width: 36px;
+        &:hover &__img{
+            color: $red;
+        }
     }
 }
