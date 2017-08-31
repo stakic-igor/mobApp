@@ -195,7 +195,7 @@
                                     Haben Sie Fragen? Zögern Sie nicht uns eine Nachricht zu schreiben, wir werden uns
                                     dann schnellstmöglich bei Ihnen melden.
                             </p>
-                            <form action="" class="contact-form">
+                            <form action="" class="contact-form" name="contact">
                                 <div class="form-group">
                                     <input type="radio" id="frau" class="input-radio" name="gender">
                                     <label for="frau" class="label-inline">Frau</label>
@@ -203,17 +203,17 @@
                                     <label for="herr" class="label-inline">Herr</label>    
                                 </div><!-- form group -->
                                 <div class="form-group">
-                                    <input type="text" class="input-text" placeholder="Name*" />    
+                                    <input type="text" class="input-text" name="name" id="name" placeholder="Name*" />    
                                 </div><!-- form group -->
                                 <div class="form-group">
-                                    <input type="text" class="input-text" placeholder="Vorname*" />
+                                    <input type="text" class="input-text" name="surname" id="surname" placeholder="Vorname*" />
                                 </div><!-- form group -->
                                 <div class="form-group">
-                                        <input type="email" class="input-text" placeholder="E-mail*" />
+                                        <input type="email" class="input-text" name="email" id="note" placeholder="E-mail*" />
                                 </div><!-- form group -->
                                 <div class="form-group">
                                     <label for="note" class="label-block">Ihre MItteilung:</label>
-                                    <textarea name="note" id="note" class="input-textarea"></textarea>
+                                    <textarea name="note" id="note" name="note" class="input-textarea"></textarea>
                                 </div><!-- form group -->
                                 <div class="form-group btn-group">
                                     <input type="submit" value="Sicherheitsfelder" class="btn btn__submit">
@@ -239,5 +239,6 @@
     <script src="js/menutoggle.js"></script>
     <script src="js/routes.js"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>
