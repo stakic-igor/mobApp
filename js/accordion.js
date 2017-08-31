@@ -1,11 +1,17 @@
 $(document).ready(function($) {
+    $(".carousel").carousel();
     $('.accordion').find('.accordion-toggle').click(function(){
 
-      //Expand or collapse this panel
-      $(this).next().slideToggle('fast');
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
 
-      //Hide the other panels
-      $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        var src = ($(this).attr('src') === 'img/accordion-open.png') ? 'img/accordion-open.png' : 'img/accordion-close.png';
+        $(this).find('img').attr('src', src);
+
+
+        //Hide the other panels
+        $(".accordion-content").not($(this).next()).slideUp('fast');
 
     });
-  });
+});
