@@ -31,14 +31,26 @@ body {
 .main {
     @include position(relative);
 }
-.phones {
-    width: 512px;
+.phones {    
+    width: 300px;
     height: auto;
-    z-index: 20;
-    @include position(absolute, $right: 0, $bottom: 0.500rem);
+    z-index: 500;
+    @include position(absolute, $right:0, $bottom: 48px);
+}
+.iphone {
+    width: 383px;
+    position: absolute;
+    bottom: 48px;
+    z-index: 450;
+    right: 121px;
+    @include position(absolute, $right: 120px, $bottom: 48px);
 }
 .powered {
     transform: translateY(-50%);
     z-index: 9000;
     @include position(fixed, $top: 50%, $right: 0);
+}
+.app, .touren, .tickets, .faq, .kontakt {
+    z-index: 6001;
+    @include position(relative);
 }

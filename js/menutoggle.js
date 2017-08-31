@@ -1,7 +1,7 @@
 $('.hamburger').on('click', function() {
     document.getElementById('myCarousel').style.visibility = "hidden";
     var pageTitle = $('.sub-page__header');
-    var modal = $('.modal');
+    var modal = $('.modal-f');
     $("#app").addClass('main-menu--active');
     $('.hero').toggleClass('hero--active');
     $(this).toggleClass('hamburger--active');

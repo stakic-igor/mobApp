@@ -3,10 +3,11 @@
     box-sizing: border-box;
     font-family: 'Univers LT Std';
     padding: 0.500rem 0;
+    height: 68px;
     @include position(absolute, $bottom: 0);
     &__paragraph {
         color: $white;
-        font-size: 1.2rem;
-        line-height: 1.4;
+        font-size: 1rem;
+        line-height: 1.2;
     }
 }

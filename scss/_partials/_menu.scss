@@ -13,7 +13,10 @@
         font-size: 3rem;
         text-decoration: none;
         color: $white;
-
+        transition: none;
+        &:hover, &:focus {
+           //
+        }
     }
     &--active {
         color: $red;
