@@ -480,6 +480,14 @@ body {
   float: right;
 }
 
+.accordion__img--show {
+  display: inline-block;
+}
+
+.accordion__img--hide {
+  display: none;
+}
+
 ::placeholder {
   color: white;
   font-family: 'Univers LT Std';
