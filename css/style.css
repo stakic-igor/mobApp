@@ -480,14 +480,6 @@ body {
   float: right;
 }
 
-.accordion__img--show {
-  display: inline-block;
-}
-
-.accordion__img--hide {
-  display: none;
-}
-
 ::placeholder {
   color: white;
   font-family: 'Univers LT Std';
@@ -580,6 +572,18 @@ body {
   float: right;
 }
 
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  display: block;
+  transform: translate(-50% -50%);
+  height: 330px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .footer {
   background: red;
   box-sizing: border-box;
@@ -612,9 +616,6 @@ body {
   .download-app {
     position: relative;
     bottom: -10%;
-  }
-  .footer {
-    position: static;
   }
 }
 
