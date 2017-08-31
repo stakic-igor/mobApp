@@ -2,7 +2,7 @@
   height: 80px;
   z-index: 30;
   @include position(relative);
-  & > div[class^="grid"] {
+  & > div[class^="col"] {
     height: 100%;
   }
 }
@@ -12,21 +12,21 @@
   @include position(relative, $top: 1rem, $left:0);
   width: 2rem;
   &__line {
-    background-color: black;
+    background-color: $white;
     height: 0.125rem;
     @include position(absolute);
     transition: all 320ms ease-in;
     width: 100%;
-    &:first-child{
+    &:first-child {
       top:0%;
     }
     &:nth-child(2) {
       top:50%;
     }
-    &:last-child {
+    &:nth-child(3) {
       top:100%;
     }
-  }
+   }
   &--active &__line {
     &:first-child{
       transform: 
@@ -37,11 +37,15 @@
     &:nth-child(2) {
       opacity: 0;
     }
-    &:last-child {
+    &:nth-child(3) {
       transform: 
         translateY(-.75em)
         translateX(0)
         rotate(-135deg);
     }
   }
-}
+  &__text {
+    @include position(absolute, $top: 24px, $left:-2px);
+    color: $white;
+  }
+ }

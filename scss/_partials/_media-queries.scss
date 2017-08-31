@@ -1,0 +1,13 @@
+@media only screen and (max-width: $laptop) {
+    .sub-page {
+        &__map-img {
+            width: 80%;
+        }
+    }
+}
+@media only screen and (max-width:979px) {}
+@media only screen and (max-width:860px) {}
+@media only screen and (max-width: $tablet) {}
+@media only screen and (max-width:640px) {}
+@media only screen and (max-width: $small) {}
+@media only screen and (max-width: $extraSmall) {}
