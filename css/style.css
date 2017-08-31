@@ -626,6 +626,7 @@ body {
 .content-wrap {
   min-height: calc( 100vh - 80px);
   position: relative;
+  padding-bottom: 40px;
 }
 
 .phones {
