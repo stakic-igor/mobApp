@@ -9,7 +9,7 @@
 .hamburger {
   cursor: pointer;
   height: 1.250rem;
-  @include position(relative, $top: 1rem, $left:0);
+  @include position(relative, $top: 2rem, $left:0);
   width: 2rem;
   &__line {
     background-color: $white;

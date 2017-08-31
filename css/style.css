@@ -292,7 +292,7 @@ body {
   cursor: pointer;
   height: 1.250rem;
   position: relative;
-  top: 1rem;
+  top: 2rem;
   left: 0;
   width: 2rem;
 }
@@ -548,13 +548,13 @@ body {
   width: 100%;
 }
 
-.form-group {
+.form-group-f {
   font-size: 0;
   margin-top: .750rem;
   width: 100%;
 }
 
-.form-group:after {
+.form-group-f:after {
   content: '';
   clear: both;
   display: table;
@@ -595,7 +595,7 @@ body {
 .input-textarea {
   background-color: transparent;
   border: 1px solid white;
-  border-radius: 0.5rem !important;
+  border-radius: .500rem !important;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: white;
@@ -606,7 +606,7 @@ body {
   width: 100%;
 }
 
-.btn {
+.btn-f {
   background-color: white;
   border: 1px solid transparent;
   border-radius: .5rem;
@@ -622,7 +622,7 @@ body {
   transition: all 280ms ease-in;
 }
 
-.btn:focus, .btn:hover {
+.btn-f:focus, .btn-f:hover {
   background-color: transparent;
   border: 1px solid white;
 }
@@ -732,7 +732,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Univers LT Std';
-  padding: 0.500rem 0;
+  padding: 0.800rem 0;
   position: absolute;
   bottom: 0;
 }
