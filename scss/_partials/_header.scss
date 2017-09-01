@@ -50,3 +50,8 @@
     font-family: 'Univers LT Std';
   }
  }
+ .slide-bar {
+  width: 85%;
+  transform: translateX(-50%);
+   @include position(relative, $top: -3rem, $left: 58%);
+ }

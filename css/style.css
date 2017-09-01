@@ -340,6 +340,15 @@ body {
   font-family: 'Univers LT Std';
 }
 
+.slide-bar {
+  width: 85%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  position: relative;
+  top: -3rem;
+  left: 58%;
+}
+
 .sub-page {
   background-image: url(../img/bg_blur.jpg);
   background-position: center center;
@@ -358,6 +367,16 @@ body {
   font-family: 'Univers LT Std';
   font-size: .95rem;
   line-height: 80px;
+  position: relative;
+}
+
+.sub-page__header:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid white;
+  width: 60px;
+  position: absolute;
+  bottom: 20px;
 }
 
 .sub-page__header-2 {
@@ -475,7 +494,6 @@ body {
 
 .accordion-toggle {
   border-top: 1px solid white;
-  border-bottom: 1px solid white;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: white;
@@ -804,6 +822,14 @@ body {
   right: 0;
 }
 
+.logoImg {
+  display: none;
+  z-index: 6500;
+  position: absolute;
+  top: 52px;
+  right: 210px;
+}
+
 .app, .touren, .tickets, .faq, .kontakt {
   z-index: 6001;
   position: relative;
@@ -818,6 +844,9 @@ body {
     width: 270px;
     bottom: 30px;
   }
+  .logoImg {
+    right: 120px;
+  }
   .sub-page__map-img {
     width: 80%;
   }
@@ -829,6 +858,24 @@ body {
   }
   .iphone {
     display: none;
+  }
+  .logoImg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slide-bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main-menu-wrap {
+    display: none;
+  }
+  .col-8 {
+    width: 100%;
   }
 }
 

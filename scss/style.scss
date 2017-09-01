@@ -49,6 +49,11 @@ body {
     z-index: 9000;
     @include position(fixed, $top: 50%, $right: 0);
 }
+.logoImg {
+    display: none;
+    z-index: 6500;
+    @include position(absolute, $right: 210px, $top: 52px);
+}
 .app, .touren, .tickets, .faq, .kontakt {
     z-index: 6001;
     @include position(relative);

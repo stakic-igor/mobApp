@@ -7,6 +7,9 @@
         width: 270px;
         bottom: 30px;
     }
+    .logoImg {
+        right: 120px;
+    }
     .sub-page {
         &__map-img {
             width: 80%;
@@ -20,9 +23,24 @@
     .iphone {
         display: none;
     }
+    .logoImg {
+        display: none;
+    }
 }
 @media only screen and (max-width:860px) {}
-@media only screen and (max-width: $tablet) {}
+@media only screen and (max-width: $tablet) {
+    .slide-bar {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    
+      .main-menu-wrap {display:none;}
+      .col-8 {
+        width: 100%;
+    }
+    
+    }
 @media only screen and (max-width:640px) {
     .sub-page {
         &__map-img {

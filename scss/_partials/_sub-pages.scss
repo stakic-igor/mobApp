@@ -13,6 +13,14 @@
         font-family: 'Univers LT Std';
         font-size: .95rem;
         line-height: 80px;
+        @include position(relative);
+        &:after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid $white;
+            width: 60px;
+            @include position(absolute, $bottom: 20px);
+        }
     }
     &__header-2 {
         font-family: 'Univers LT Std';
