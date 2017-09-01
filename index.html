@@ -311,31 +311,32 @@
                                     Haben Sie Fragen? Zögern Sie nicht uns eine Nachricht zu schreiben, wir werden uns
                                     dann schnellstmöglich bei Ihnen melden.
                             </p>
-                            <form action="" class="contact-form">
-                                <div class="form-group-f">
-                                    <input type="radio" id="frau" class="input-radio" name="gender">
-                                    <label for="frau" class="label-inline">Frau</label>
-                                    <input type="radio" id="herr" class="input-radio" name="gender">
-                                    <label for="herr" class="label-inline">Herr</label>    
-                                </div><!-- form group -->
-                                <div class="form-group-f">
-                                    <input type="text" class="input-text" placeholder="Name*" />    
-                                </div><!-- form group -->
-                                <div class="form-group-f">
-                                    <input type="text" class="input-text" placeholder="Vorname*" />
-                                </div><!-- form group -->
-                                <div class="form-group-f">
-                                        <input type="email" class="input-text" placeholder="E-mail*" />
-                                </div><!-- form group -->
-                                <div class="form-group-f">
-                                    <label for="note" class="label-block">Ihre MItteilung:</label>
-                                    <textarea name="note" id="note" class="input-textarea"></textarea>
-                                </div><!-- form group -->
-                                <div class="form-group-f btn-group-f">
-                                    <input type="submit" value="Sicherheitsfelder" class="btn-f btn-f__submit">
-                                    <span class="submit-info">senden</span>
-                                </div><!-- form group -->
-                            </form><!-- form -->
+                            <form action="" name='contact' class="contact-form">
+                                    <div class="form-group-f">
+                                        <input type="radio" id="frau" class="input-radio" name="gender">
+                                        <label for="frau" class="label-inline">Frau</label>
+                                        <input type="radio" id="herr" class="input-radio" name="gender">
+                                        <label for="herr" class="label-inline">Herr</label>    
+                                    </div><!-- form group -->
+                                    <div class="form-group-f">
+                                        <input type="text" class="input-text" name='name' placeholder="Name*" />    
+                                    </div><!-- form group -->
+                                    <div class="form-group-f">
+                                        <input type="text" class="input-text" name='vorname' placeholder="Vorname*" />
+                                    </div><!-- form group -->
+                                    <div class="form-group-f">
+                                            <input type="email" class="input-text" name='email' placeholder="E-mail*" />
+                                    </div><!-- form group -->
+                                    <div class="form-group-f">
+                                        <label for="note" class="label-block">Ihre MItteilung:</label>
+                                        <textarea name="note" id="note" class="input-textarea"></textarea>
+                                    </div><!-- form group -->
+                                    <div class="form-group-f btn-group-f">
+                                        <input type="submit" value="Sicherheitsfelder" class="btn-f btn__submit">
+                                        <span id='error' class="label-block" style='color:red' </span>
+                                        <span class="submit-info">senden</span>
+                                    </div><!-- form group -->
+                                </form><!-- form -->
                     </div>
                 </div>
             </div><!-- row -->
