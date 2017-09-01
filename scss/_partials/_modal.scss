@@ -72,3 +72,10 @@
         }
     }
 }
+#logoshow {
+    transform: translate(-50%, -50%);
+    width: 450px;
+    text-align: center;
+    z-index: 6000;
+    @include position(fixed, $top: 50%, $left: 50%);
+};

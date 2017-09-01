@@ -447,6 +447,10 @@ body {
   margin-right: .5rem;
 }
 
+.download-app__link:hover > span {
+  color: red;
+}
+
 .download-app__link > span {
   color: white;
   font-size: .75rem;
@@ -461,8 +465,12 @@ body {
 
 .download-app__info-link {
   font-family: 'Univers LT Std';
-  line-height: .95rem;
+  line-height: .75rem;
   color: red;
+}
+
+.download-app li:last-child {
+  margin-top: .75rem;
 }
 
 .accordion-toggle {
@@ -725,6 +733,17 @@ body {
 
 .newsletter__btn:hover .newsletter__btn__img {
   color: red;
+}
+
+#logoshow {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 450px;
+  text-align: center;
+  z-index: 6000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 }
 
 .footer {

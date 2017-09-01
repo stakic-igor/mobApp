@@ -38,6 +38,9 @@
         line-height: .95rem;
         text-decoration: none;
         margin-right: .5rem;
+        &:hover > span{
+            color: $red;
+        }
         & > span {
             color: $white;
             font-size: .75rem;
@@ -51,7 +54,10 @@
     }
     &__info-link {
         font-family: 'Univers LT Std';
-        line-height: .95rem;
+        line-height: .75rem;
         color: $red;
+    }
+    & li:last-child {
+        margin-top: .75rem;
     }
 }

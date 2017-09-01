@@ -75,21 +75,24 @@
 <section class="main container">
     <div class="row">
         <div class="col-12">
-            <div class="modal-f">
-                <h2 class="modal-f__header">Download iOS ab sofort</h2>
-                <p class="modal-f__paragraph modal-f__paragraph--link"><a href="#" class="modal-f__link">Hier downloaden</a></p>
-                <h2 class="modal-f__header">Download Android<br /> in Kürze</h2>
-                <p class="modal-f__paragraph">Bitte haben Sie einen Moment Geduld.
-                        Wenn Sie uns Ihre E-Mailadresse senden,
-                        informieren wir Sie umgehend, wenn es so
-                        weit ist:</p>
-                <form action="" name="newsletter">
-                    <div class="newsletter-form-group">
-                        <input type="email" class="newsletter__input" placeholder="E-Mailadresse eingeben">
-                        <button class="newsletter__btn"><i class="fa fa-paper-plane-o newsletter__btn__img" aria-hidden="true"></i></button>    
-                    </div><!-- newsletter-form-group-f -->
-                </form>
-            </div><!-- modal --> 
+            <div id="modalfade" >
+                <div class="modal-f">
+                    <h2 class="modal-f__header">Download iOS ab sofort</h2>
+                    <p class="modal-f__paragraph modal-f__paragraph--link"><a href="#" class="modal-f__link">Hier downloaden</a></p>
+                    <h2 class="modal-f__header">Download Android<br /> in Kürze</h2>
+                    <p class="modal-f__paragraph">Bitte haben Sie einen Moment Geduld.
+                            Wenn Sie uns Ihre E-Mailadresse senden,
+                            informieren wir Sie umgehend, wenn es so
+                            weit ist:</p>
+                    <form action="" name="newsletter">
+                        <div class="newsletter-form-group">
+                            <input type="email" class="newsletter__input" placeholder="E-Mailadresse eingeben">
+                            <button class="newsletter__btn"><i class="fa fa-paper-plane-o newsletter__btn__img" aria-hidden="true"></i></button>    
+                        </div><!-- newsletter-form-group-f -->
+                    </form>
+                </div><!-- modal -->
+            </div>
+            <div id="logoshow" style="display:none;"><img src="img/Logo_Fensterplatz.png"></div>
         </div>    
     </div><!-- end row -->
 </section><!-- main -->
@@ -128,7 +131,7 @@
                     <li><a href="#" class="download-app__link">
                         <img src="img/download-icon.png" alt="Apple app store" class="download-app__img"/><span>Google <br />Play-Store<span>
                     </a></li>
-                    <li><a href="#" class="download-app__info-link"></a>» MEHR INFOS</li>
+                    <li><a href="#" class="download-app__info-link">» MEHR INFOS</a></li>
                 </ul>
             </div>
             <div class="col-8">
@@ -355,6 +358,23 @@
 <script src="js/menutoggle.js"></script>
 <script src="js/routes.js"></script>
 <script src="js/accordion.js"></script>
+<script src="js/modal.js"></script>
 <script src="js/validation.js"></script>
+<script>
+$(document).ready(function() {
+$('.carousel-indicators li').click(function(e){
+        e.stopPropagation();
+        var goTo = $(this).data('slide-to');
+        $('.carousel-inner .item').each(function(index){
+            if($(this).data('id') == goTo){
+                goTo = index;
+                return false;
+            }
+        });
+
+        $('#gallery-carousel').carousel(goTo); 
+    });
+})
+</script>
 </body>
 </html>
