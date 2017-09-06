@@ -4,31 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Fensterplatz - Traintour Appenzellerland & Reiseführer</title>
-	<meta name="description" content="Einsteigen, Kopfhörer aufsetzen, App starten – und los geht’s. Der digitale Reiseführer der Appenzeller Bahnen. Aussicht mit Geschichten erleben." />
-	<meta property="og:locale" content="de_DE" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Fensterplatz - Traintour Appenzellerland & Reiseführer" />
-	<meta property="og:description" content="Einsteigen, Kopfhörer aufsetzen, App starten – und los geht’s. Der digitale Reiseführer der Appenzeller Bahnen. Aussicht mit Geschichten erleben." />
-	<meta property="og:url" content="http://fensterplatz.ch/" />
+    <title>Traintour Appenzellerland</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/5ff40b4469.js"></script>
-    <!-- Hotjar Tracking Code for http://fensterplatz.ch/ -->
-	<script>
-	    (function(h,o,t,j,a,r){
-		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-		h._hjSettings={hjid:611458,hjsv:5};
-		a=o.getElementsByTagName('head')[0];
-		r=o.createElement('script');r.async=1;
-		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-		a.appendChild(r);
-	    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-	</script>
-
 </head>
 <body>
 <div class="carousel slide" id="myCarousel" data-ride="carousel">
@@ -91,24 +73,24 @@
     <div class="row">
         <div class="col-12">
             <img src="img/slider-bar.png" alt="slide bar" class="slide-bar">
-            <div id="modalfade" style="display:none;">
+            <div id="modalfade" >
                 <div class="modal-f">
                     <h2 class="modal-f__header">Download iOS ab sofort</h2>
-                    <p class="modal-f__paragraph modal-f__paragraph--link"><a href="https://itunes.apple.com/ch/app/fensterplatz-traintour-appenzellerland/id1254984011?l=de&ls=1&mt=" class="modal-f__link">Hier downloaden</a></p>
+                    <p class="modal-f__paragraph modal-f__paragraph--link"><a href="#" class="modal-f__link">Hier downloaden</a></p>
                     <h2 class="modal-f__header">Download Android<br /> in Kürze</h2>
                     <p class="modal-f__paragraph">Bitte haben Sie einen Moment Geduld.
                             Wenn Sie uns Ihre E-Mailadresse senden,
                             informieren wir Sie umgehend, wenn es so
                             weit ist:</p>
-                    <form method="post" action="newsletter_sendmail.php" name="newsletter">
+                    <form action="" name="newsletter">
                         <div class="newsletter-form-group">
-                            <input type="email" name='email' class="newsletter__input" placeholder="E-Mailadresse eingeben">
+                            <input type="email" class="newsletter__input" placeholder="E-Mailadresse eingeben">
                             <button class="newsletter__btn"><i class="fa fa-paper-plane-o newsletter__btn__img" aria-hidden="true"></i></button>    
                         </div><!-- newsletter-form-group-f -->
                     </form>
                 </div><!-- modal -->
             </div>
-            <div id="logostart" style=""><img src="img/Logo_Fensterplatz.png" class="logorespons"></div>
+            <div id="logoshow" style="display:none;"><img src="img/Logo_Fensterplatz.png"></div>
         </div>    
     </div><!-- end row -->
 </section><!-- main -->
@@ -117,8 +99,8 @@
         <div class="row">
             <div class="col-12">
                 <p class="footer__paragraph">
-                    Mit dem Reiseführer Postkartenaussichten geniessen und Geschichten erfahren:<br/>
-                    In die Appenzeller Bahnen einsteigen, Kopfhörer aufsetzen, Fensterplatz-App starten - und los
+                    Mit dem Reisefuhrer Postkartenaussichten geniessen und Geschichten erfahren:<br/>
+                    In die Appenzeller Bahnen einsteigen, Kopfhorer aufsetzen, Fensterplats-App starte - und los
                     geht's.
                 </p>
             </div>
@@ -144,10 +126,10 @@
                         <img src="img/download-icon.png" alt="Apple app store" class="download-app__img"/><span>Apple <br />App Store<span>
                     </a></li>
                     <h3 class="download-app__title">Download <br />in Kürze</h3>
-                    <li><a href="/" class="download-app__link">
+                    <li><a href="#" class="download-app__link">
                         <img src="img/download-icon.png" alt="Apple app store" class="download-app__img"/><span>Google <br />Play-Store<span>
                     </a></li>
-                    <li><a href="/" class="download-app__info-link">» MEHR INFOS</a></li>
+                    <li><a href="#" class="download-app__info-link">» MEHR INFOS</a></li>
                 </ul>
             </div>
             <div class="col-8">
@@ -196,14 +178,25 @@
                                     Für Fahrplanauskünfte steht der Bahnhof Appenzell (Tel. 071 788 50 50) gerne zur Verfügung.
                             </p>
                             <div class="accordion">
-                                <div class="accordion-toggle"><p class="accordion__question">2 Stunden (Fahrzeit ohne Aufenthalt) von der pulsierenden Stadt ins schmucke Appenzell</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
+                                <div class="accordion-toggle"><p class="accordion__question">2 Stunden (Fahrzeit ohne Aufenthalt) Von der pulsierenden Stadt ins schmucke Appenzell</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
                                 <div class="accordion-content">
                                     <p class="accordion-content__paragraph">Tour
                                         St. Gallen (AB) – Teufen – Gais – Appenzell – Urnäsch – Herisau – Gossau (AB) – Gossau (SBB) – St. Gallen (SBB)
                                     </p>
                                     <p class="accordion-content__paragraph">
-                                        Highlights entlang der Strecke:
+                                        Highlights entlang der Strecke
                                         Bummel durch St. Gallen, Alpsteinpanorama, Gais, Appenzell, Kronberg, Urnäsch, Säntis (via Postauto ab Urnäsch)
+                                    </p>
+                                </div>
+                                <div class="accordion-toggle"><p class="accordion__question">Die Stadt, der See, die Hügel</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
+                                <div class="accordion-content">
+                                    <p class="accordion-content__paragraph">
+                                        Tour
+                                        St. Gallen (AB) – Speicher – Trogen – Speicher – St. Gallen (AB)
+                                    </p>
+                                    <p class="accordion-content__paragraph">
+                                        Highlights entlang der Strecke
+                                        Bummel durch St. Gallen, Ausblick über die Stadt St.Gallen, Blick auf den Bodensee, Vögelinsegg, Kinderdorf Pestalozzi Trogen
                                     </p>
                                 </div>
                                 <div class="accordion-toggle"><p class="accordion__question">½ Tag (inkl. Aufenthalt in Appenzell)<br />
@@ -214,20 +207,8 @@
                                             St. Gallen (AB) – Bühler – Teufen – Gais – Appenzell – Wasserauen – Appenzell (Aufenthalt) – Urnäsch – Herisau – Gossau (AB) – Gossau (SBB) – St. Gallen (SBB)
                                     </p>
                                     <p class="accordion-content__paragraph">
-                                            Highlights entlang der Strecke:
+                                            Highlights entlang der Strecke
                                             Alpsteinpanorama, Gais, Hoher Kasten (via Postauto ab Weissbad), Ebenalp, Wanderung zum Seealpsee, Appenzell, Kronberg, Urnäsch, Säntis (via Postauto ab Urnäsch)
-                                    </p>
-                                </div>
-                                <div class="accordion-toggle"><p class="accordion__question">1 Tag (inkl. Aufenthalt in Altstätten und Appenzell)<br />
-                                        Von der pulsierenden Stadt ins mystische Schwendetal</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
-                                <div class="accordion-content">
-                                    <p class="accordion-content__paragraph">
-                                            Tour
-                                            St. Gallen (AB) – Teufen – Bühler – Gais – Altstätten Stadt (Aufenthalt) – Gais – Appenzell (Aufenthalt) – Urnäsch – Herisau – Gossau (AB) – Gossau (SBB) – St. Gallen (SBB
-                                    </p>
-                                    <p class="accordion-content__paragraph">
-                                            Highlights entlang der Strecke:
-                                            Bummel durch St. Gallen, Alpsteinpanorama, Gais, offener Aussichtswagen im Sommer (Altstätten-Gais), Denkmal am Stoss, Märkte in Altstätten, Appenzell, Kronberg, Urnäsch, Säntis (via Postauto ab Urnäsch)
                                     </p>
                                 </div>
                             </div><!-- accordion -->
@@ -240,28 +221,28 @@
                                 Es gilt das reguläre Sortiment.
                         </p>
                         <div class="accordion">
-                                <div class="accordion-toggle"><p class="accordion__question">Abos</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
+                                <div class="accordion-toggle"><p class="accordion__question">Abos:</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
                                 <div class="accordion-content">
                                     <p class="accordion-content__paragraph">
                                         Ob mit Ihrem GA oder OSTWIND-Abo – steigen Sie ein und geniessen Sie den Fensterplatz z.B. nach einem anstrengenden Arbeitstag. Die gängigen Abos sind bei den Appenzeller Bahnen gültig.
                                     </p>
                                 </div>
-                                <div class="accordion-toggle"><p class="accordion__question">Tageskarte</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
+                                <div class="accordion-toggle"><p class="accordion__question">Tageskarte:</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
                                 <div class="accordion-content">
                                     <p class="accordion-content__paragraph">
                                         Mit einer Tageskarte für die von Ihnen gewünschten Zonen oder einer OSTWIND 9-Uhr-Tageskarte sind Sie bestens für Ihren Ausflug am Fensterplatz gerüstet.
                                     </p>
                                 </div>
-                                <div class="accordion-toggle"><p class="accordion__question">Gästekarten</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
+                                <div class="accordion-toggle"><p class="accordion__question">Gästekarten:</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
                                 <div class="accordion-content">
                                     <p class="accordion-content__paragraph">
                                         Auf dem Streckennetz der Appenzeller Bahnen ist der OSKAR (alle Zonen) sowie die Appenzeller Ferienkarte (ausgewählte Zonen) gültig.    
                                     <p>
                                 </div>
-                                <div class="accordion-toggle"><p class="accordion__question">Ticket-App</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
+                                <div class="accordion-toggle"><p class="accordion__question">Ticket-App:</p><img src="img/accordion-open.png" alt="Open" class="accordion__img"/></div>
                                 <div class="accordion-content">
                                     <p class="accordion-content__paragraph">
-                                            Wischen beim Einsteigen – Wischen beim Aussteigen: So funktioniert <a href="http://fairtiq.ch/de" class="accordion-content__paragraph__link">FAIRTIQ</a>, die einfachste Fahrkarte der Schweiz. Die App erkennt die gefahrene Strecke und bucht automatisch den passenden Betrag ab.
+                                            Wischen beim Einsteigen – Wischen beim Aussteigen: So funktioniert <a href="#" class="accordion-content__paragraph__link">FAIRTIQ</a>, die einfachste Fahrkarte der Schweiz. Die App erkennt die gefahrene Strecke und bucht automatisch den passenden Betrag ab.
                                     <p>
                                 </div>
                             </div><!-- accordion -->
