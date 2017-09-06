@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Sorren';
+	src: url('../fonts/Sorren-Medium.eot');
+	src: url('../fonts/Sorren-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Sorren-Medium.woff2') format('woff2'),
+		url('../fonts/Sorren-Medium.woff') format('woff'),
+		url('../fonts/Sorren-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Univers LT Std';
+	src: url('../fonts/UniversLTStd.eot');
+	src: url('../fonts/UniversLTStd.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLTStd.woff2') format('woff2'),
+		url('../fonts/UniversLTStd.woff') format('woff'),
+		url('../fonts/UniversLTStd.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Univers LT Std';
+	src: url('../fonts/UniversLTStd-BoldEx.eot');
+	src: url('../fonts/UniversLTStd-BoldEx.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLTStd-BoldEx.woff2') format('woff2'),
+		url('../fonts/UniversLTStd-BoldEx.woff') format('woff'),
+		url('../fonts/UniversLTStd-BoldEx.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('../fonts/CircularStd-Black.eot');
+	src: url('../fonts/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CircularStd-Black.woff2') format('woff2'),
+		url('../fonts/CircularStd-Black.woff') format('woff'),
+		url('../fonts/CircularStd-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}

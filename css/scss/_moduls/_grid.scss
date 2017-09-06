@@ -1,0 +1,36 @@
+.container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 960px;
+    max-width: 100%;
+    &--fluid {
+        width: 100%;
+    }
+}
+.row {
+    font-size: 0;
+}
+
+$colsNo: 12;
+$col: 'col';
+$gutter: 1rem;
+
+@for $i from 1 through $colsNo {
+    .#{$col}-#{$i} {
+        box-sizing: border-box;
+        font-size: 1rem;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        width: percentage($i/$colsNo);
+    }
+}
+
+@media screen and (max-width: $small) {
+    @for $i from 1 through $colsNo {
+        .#{$col}-#{$i} {
+            width: 100%;
+        } 
+    }
+}
