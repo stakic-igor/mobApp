@@ -41,8 +41,7 @@
 
 </head>
 <body>
-
- <div class="slick-slider">
+<div id="slick-slider" class="slick-slider">
     <div class="item item--1"></div>
     <div class="item item--2"></div>
     <div class="item item--3"></div>
@@ -73,7 +72,6 @@
 <section class="main container">
     <div class="row">
         <div class="col-12">
-            <img src="img/slider-bar.png" alt="slide bar" class="slide-bar">
             <div id="modalfade" style="display:none;">
                 <div class="modal-f">
                     <h2 class="modal-f__header">Download iOS ab sofort</h2>
@@ -363,9 +361,23 @@
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script>
 $(document).ready(function() {
-     $('.slick-slider').slick({
+    $('.slick-slider').slick({
+        slidesToShow : 1,
+        slidesToScroll : 1,
         dots : true,
         arrows : false,
+        autoplay : true,
+        autoplaySpeed : 5000,
+        pauseOnFocus : false,
+        pauseOnHover : false,
+        
+    });
+    $('#slick-slide00').addClass('in-progress');
+    $('.slick-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.slick-dots li').removeClass('in-progress');
+        $('#slick-slide0'+nextSlide).addClass('in-progress');
+    });
+    $('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
     });
 });
 </script>

@@ -158,7 +158,7 @@ table {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
+  background: #fff url("../img/ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
@@ -998,6 +998,7 @@ body {
   box-sizing: border-box;
   font-family: 'Univers LT Std';
   padding: 0.800rem 0;
+  z-index: 10;
   position: absolute;
   bottom: 0;
 }

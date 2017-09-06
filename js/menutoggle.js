@@ -1,6 +1,6 @@
 var slideBar = $('.slide-bar');
 $('.hamburger').on('click', function() {
-    document.getElementById('myCarousel').style.visibility = "hidden";
+    document.getElementById('slick-slider').style.visibility = "hidden";
     var pageTitle = $('.sub-page__header');
     var modal = $('.modal-f');
     var logoshow = $('#logoshow');
@@ -16,7 +16,7 @@ $('.hamburger').on('click', function() {
         logoshow.hide();
         slideBar.hide();
     } else {
-        document.getElementById('myCarousel').style.visibility = "visible";
+        document.getElementById('slick-slider').style.visibility = "visible";
         pageTitle.hide();
         logoImg.hide();
         modal.show();
