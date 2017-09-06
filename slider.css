@@ -44,33 +44,37 @@ html {
         transform: translate3d(0, 0, 0);
     }
 }
-.item:nth-child(1) {
+.item--1 {
     background: url(../img/slide-1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-.item:nth-child(2) {
+.item--2 {
     background: url(../img/slide-2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-.item:nth-child(3) {
+.item--3 {
     background: url(../img/slide-3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-.item:nth-child(4) {
+.item--4 {
     background: url(../img/slide-4.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.item {
+    height: 1000px;
 }
 .carousel {
     z-index: -99;
