@@ -151,19 +151,26 @@ html,body {
     transition: 0s linear;
 }
 
+
 .slick-dots li.in-progress:not(:last-child):before {
-    width: 60px;
+    width: 175px;
     z-index: 0;
     transition: 5s linear;
 }
 
 
 .slick-dots li.in-progress:not(:last-child):after {
-    width: 60px;
+    width: 175px;
     z-index: 0;
      transition: 5s linear;
 }
 
+@media (max-width: 768px) {
+    .slick-dots li.in-progress:not(:last-child):before,
+    .slick-dots li.in-progress:not(:last-child):after {
+        width: 60px;
+    }
+}
 .slick-dots li:not(:last-child) {
     margin-right: 150px;
 }
