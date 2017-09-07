@@ -1,6 +1,6 @@
 var slideBar = $('.slide-bar');
 $('.hamburger').on('click', function() {
-    document.getElementById('slick-slider').style.visibility = "hidden";
+    $('#slick-slider').css({"visibility":"visible", "filter":"blur(20px)"});
     $('.slick-dots').css("opacity",0);
     $('.dots-names').css("opacity",0);
     var pageTitle = $('.sub-page__header');
@@ -18,7 +18,7 @@ $('.hamburger').on('click', function() {
         logoshow.hide();
         slideBar.hide();
     } else {
-        document.getElementById('slick-slider').style.visibility = "visible";
+        $('#slick-slider').css({"visibility":"visible", "filter":"blur(0)"});
         $('.slick-dots').css("opacity",1);
         $('.dots-names').css("opacity",1);
         pageTitle.hide();
