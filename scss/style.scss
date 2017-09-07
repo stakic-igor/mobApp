@@ -61,5 +61,13 @@ body {
     @include position(relative);
 }
 
-
+#logostart {
+    transform: translate(-50%, -50%);
+    width: 450px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index:5990;
+}
 @import '_partials/_media-queries';

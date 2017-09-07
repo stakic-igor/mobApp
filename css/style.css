@@ -1063,6 +1063,16 @@ body {
   position: relative;
 }
 
+#logostart {
+  transform: translate(-50%, -50%);
+  width: 450px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5990;
+}
+
 @media only screen and (max-width: 1366px) {
   .phones {
     width: 230px;
