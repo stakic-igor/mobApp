@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: 'Univers LT Std';
     padding: 0.800rem 0;
+    z-index: 10;    
     @include position(absolute, $bottom: 0);
     &__paragraph {
         color: $white;
