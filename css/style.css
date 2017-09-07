@@ -681,10 +681,7 @@ body {
 .main-menu-wrap {
   position: relative;
   height: calc( 100vh - 80px);
-<<<<<<< HEAD
-=======
   z-index: 5;
->>>>>>> slider-indicator
 }
 
 .main-menu {
@@ -812,7 +809,6 @@ body {
   float: right;
 }
 
-<<<<<<< HEAD
 .arrow {
   margin-left: 9px;
   float: right;
@@ -828,18 +824,6 @@ body {
   content: url(../img/accordion-open.png);
 }
 
-::-webkit-input-placeholder {
-  color: white;
-  font-family: 'Univers LT Std';
-}
-
-:-ms-input-placeholder {
-  color: white;
-  font-family: 'Univers LT Std';
-}
-
-=======
->>>>>>> slider-indicator
 ::placeholder {
   color: white;
   font-family: 'Univers LT Std';
@@ -910,10 +894,6 @@ body {
   background-color: white;
   border: 1px solid transparent;
   border-radius: .5rem;
-<<<<<<< HEAD
-  -webkit-box-sizing: border-box;
-=======
->>>>>>> slider-indicator
   box-sizing: border-box;
   color: magenta;
   cursor: pointer;
@@ -921,10 +901,6 @@ body {
   font-size: .95rem;
   font-family: 'Univers LT Std';
   padding: 5px 25px;
-<<<<<<< HEAD
-  -webkit-transition: all 280ms ease-in;
-=======
->>>>>>> slider-indicator
   transition: all 280ms ease-in;
 }
 
@@ -945,9 +921,9 @@ body {
   box-sizing: border-box;
   display: block;
   font-family: 'Univers LT Std';
-  padding: 2rem 2rem;
+  padding: 3rem 4rem;
   transform: translate(-50%, -50%);
-  width: 450px;
+  width: 550px;
   text-align: center;
   z-index: 6000;
   position: fixed;
@@ -1024,10 +1000,6 @@ body {
 }
 
 #logoshow {
-<<<<<<< HEAD
-  -webkit-transform: translate(-50%, -50%);
-=======
->>>>>>> slider-indicator
   transform: translate(-50%, -50%);
   width: 450px;
   text-align: center;
@@ -1037,7 +1009,6 @@ body {
   left: 50%;
 }
 
-<<<<<<< HEAD
 .close-modal {
   position: absolute;
   z-index: 9999;
@@ -1046,7 +1017,8 @@ body {
   right: 1rem;
   font-size: 1.500rem;
   cursor: pointer;
-=======
+}
+
 html, body {
   height: 100%;
 }
@@ -1314,7 +1286,6 @@ html, body {
 .slick-slider-info path {
   fill: currentColor;
   stroke: currentColor;
->>>>>>> slider-indicator
 }
 
 .footer {
@@ -1388,20 +1359,13 @@ html, body {
 }
 
 #logostart {
-<<<<<<< HEAD
   -webkit-transform: translate(-50%, -50%);
-=======
->>>>>>> slider-indicator
   transform: translate(-50%, -50%);
   width: 450px;
   text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
-<<<<<<< HEAD
-=======
-  z-index: 5990;
->>>>>>> slider-indicator
 }
 
 @media only screen and (max-width: 1366px) {
@@ -1461,8 +1425,5 @@ html, body {
     bottom: -10%;
   }
 }
-<<<<<<< HEAD
-=======
 
 /*# sourceMappingURL=style.css.map */
->>>>>>> slider-indicator
