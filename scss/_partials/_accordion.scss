@@ -49,3 +49,16 @@
         float: right;
     }
 }
+.arrow{
+    margin-left:9px;
+    float: right;
+}
+
+.arrowUp:before{
+    font-family: FontAwesome;
+    content: url(../img/accordion-close.png);
+}
+.arrowDown:before{
+    font-family: FontAwesome;
+    content: url(../img/accordion-open.png);
+}
