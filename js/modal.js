@@ -4,3 +4,7 @@ $(document).ready( function() {
 $(document).ready( function() {
     $('#modalfade').delay(4000).fadeIn();
   });
+
+$('.close-modal').click(function(){
+  $('#modalfade').delay(1000).fadeOut();
+})

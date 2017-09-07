@@ -154,7 +154,6 @@ table {
   padding-left: 1rem;
   padding-right: 1rem;
   width: 66.66667%;
-  margin-top:135px;
 }
 
 .col-9 {
@@ -295,12 +294,12 @@ body {
   position: relative;
   top: 2rem;
   left: 0;
-  width: 3rem;
+  width: 2rem;
 }
 
 .hamburger__line {
   background-color: white;
-  height: 0.225rem;
+  height: 0.125rem;
   position: absolute;
   -webkit-transition: all 320ms ease-in;
   transition: all 320ms ease-in;
@@ -335,11 +334,10 @@ body {
 
 .hamburger__text {
   position: absolute;
-  top: 2.5rem;
+  top: 2rem;
   left: -4px;
   color: white;
-  font-family: 'Univers LT Std'; 
-  font-weight: bold;
+  font-family: 'Univers LT Std';
 }
 
 .slide-bar {
@@ -356,7 +354,7 @@ body {
   background-position: center center;
   background-size: cover;
   display: none;
-  padding-top: 0px;
+  padding-top: 80px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -409,7 +407,6 @@ body {
 .sub-page__paragraph__link {
   color: red;
   text-decoration: none;
-  font-weight:bold;
 }
 
 .sub-page__separator {
@@ -427,9 +424,7 @@ body {
 
 .main-menu-wrap {
   position: relative;
-  height: calc( 100vh - 130px);
-  margin-top:130px;
-  margin-left:-4px;
+  height: calc( 100vh - 80px);
 }
 
 .main-menu {
@@ -461,7 +456,6 @@ body {
   line-height: 1.6rem;
   margin-top: 1rem;
   margin-bottom: .500rem;
-  font-weight:bold;
 }
 
 .download-app__link {
@@ -491,8 +485,7 @@ body {
 .download-app__info-link {
   font-family: 'Univers LT Std';
   line-height: .75rem;
-  color: red; 
-  font-weight:bold;
+  color: red;
 }
 
 .download-app li:last-child {
@@ -599,12 +592,11 @@ body {
   font-family: 'Univers LT Std';
   font-size: .75rem;
   margin-bottom: 10px;
-
 }
 
 .label-inline {
   display: inline;
-  margin-right: .2rem;
+  margin-right: .500rem;
 }
 
 .input-text {
@@ -641,19 +633,19 @@ body {
 }
 
 .btn-f {
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid transparent;
-    border-radius: .5rem;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    font-size: .95rem;
-    font-family: 'Univers LT Std';
-    padding: 5px 25px;
-    -webkit-transition: all 280ms ease-in;
-    transition: all 280ms ease-in;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: .5rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: magenta;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .95rem;
+  font-family: 'Univers LT Std';
+  padding: 5px 25px;
+  -webkit-transition: all 280ms ease-in;
+  transition: all 280ms ease-in;
 }
 
 .btn-f:focus, .btn-f:hover {
@@ -684,7 +676,7 @@ body {
   top: 50%;
   left: 50%;
 }
-h2.sub-page__header-2 {font-family: 'Univers LT Std';font-weight: bold;}
+
 .modal-f__header {
   border-top: 1px solid red;
   border-bottom: 1px solid red;
@@ -739,7 +731,7 @@ h2.sub-page__header-2 {font-family: 'Univers LT Std';font-weight: bold;}
   background: transparent;
   font-size: 1rem;
   color: red;
-  height: 46px;
+  height: 36px;
   vertical-align: middle;
   padding-left: .500rem;
 }
@@ -753,22 +745,33 @@ h2.sub-page__header-2 {font-family: 'Univers LT Std';font-weight: bold;}
   color: white;
   display: inline-block;
   vertical-align: middle;
-  height: 46px;
-  width: 56px;
+  height: 36px;
+  width: 36px;
 }
 
 .newsletter__btn:hover .newsletter__btn__img {
   color: red;
 }
-i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
-#logostart {
+
+#logoshow {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 450px;
   text-align: center;
+  z-index: 6000;
   position: fixed;
   top: 50%;
   left: 50%;
+}
+
+.close-modal {
+  position: absolute;
+  z-index: 9999;
+  color: white;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.500rem;
+  cursor: pointer;
 }
 
 .footer {
@@ -783,10 +786,9 @@ i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
 
 .footer__paragraph {
   color: white;
-  font-size: 1.2rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.2;
 }
-.footer__paragraph.c { line-height: 3.0; font-size:1.3rem;}
 
 .full-width {
   width: 100%;
@@ -807,7 +809,7 @@ i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
   z-index: 500;
   position: absolute;
   right: 0;
-  bottom: 38px;
+  bottom: 48px;
 }
 
 .iphone {
@@ -817,8 +819,8 @@ i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
   z-index: 450;
   right: 121px;
   position: absolute;
-  right: 110px;
-  bottom: 28px;
+  right: 120px;
+  bottom: 48px;
 }
 
 .powered {
@@ -843,29 +845,34 @@ i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
   position: relative;
 }
 
-
-@media only screen and (max-width: 1650px) {
-  .phones {
-    display: none;
-  }
-  .iphone {
-    display: none;
-  }
-    .logoImg {
-    right: 120px;
-  }
-
+#logostart {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 450px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
 }
 
-
 @media only screen and (max-width: 1366px) {
-
+  .phones {
+    width: 230px;
+    bottom: 34px;
+  }
+  .iphone {
+    width: 270px;
+    bottom: 30px;
+  }
+  .logoImg {
+    right: 120px;
+  }
   .sub-page__map-img {
     width: 80%;
   }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 979px) {
   .phones {
     display: none;
   }
@@ -873,7 +880,7 @@ i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
     display: none;
   }
   .logoImg {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -884,24 +891,13 @@ i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
 }
 
 @media only screen and (max-width: 700px) {
-
+  .main-menu-wrap {
+    display: none;
+  }
   .col-8 {
     width: 100%;
-    margin-top: 25px;
   }
-
-  .powered {
-    display:none;
-  }
-
-  .sub-page__header {text-align:right;pointer-events: none;}
-  .sub-page__header:after {right:0;}
-  .download-app {display:none;}
-  .main-menu-wrap {
-    height: 280px;
 }
-
-
 
 @media only screen and (max-width: 640px) {
   .sub-page__map-img {
@@ -915,18 +911,4 @@ i.fa.fa-paper-plane-o.newsletter__btn__img {font-size:26px;}
     position: relative;
     bottom: -10%;
   }
-.modal-f {width: 100%;
-    height: 85%;
-    margin-top: 15%;
-}
-.footer {display:none;}
-.logorespons {max-width:320px;}
-
-}
-
-
-@media only screen and (max-width: 450px) {
-
-     .modal-f {padding: 1rem 1rem;}
-     .hamburger {top: 1rem;}
 }

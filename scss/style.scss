@@ -58,6 +58,13 @@ body {
     z-index: 6001;
     @include position(relative);
 }
-
-
+#logostart {
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+width: 450px;
+text-align: center;
+position: fixed;
+top: 50%;
+left: 50%;
+}
 @import '_partials/_media-queries';
