@@ -1,6 +1,7 @@
 .main-menu-wrap {
     @include position(relative);
     height: calc( 100vh - 80px );
+    z-index: 5;
 }
 .main-menu {
     font-family: 'Sorren';

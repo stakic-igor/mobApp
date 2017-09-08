@@ -79,3 +79,16 @@
   font-size: .75rem;
   float: right;
 }
+
+input[type=radio] {
+  display: none;
+}
+input[type=radio] + label {
+	background: url('../img/radio.png') left top no-repeat;
+	min-height: 25px;
+	padding-left: 16px;
+}
+
+input[type=radio]:checked + label {
+	background: url('../img/radio-cheked.png') left top no-repeat;
+}

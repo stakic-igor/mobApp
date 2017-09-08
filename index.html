@@ -13,8 +13,8 @@
 	<meta property="og:url" content="http://fensterplatz.ch/" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/5ff40b4469.js"></script>
 <script>
@@ -41,43 +41,39 @@
 
 </head>
 <body>
-<div class="carousel slide" id="myCarousel" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <!-- <img src="img/slide-1.jpg" alt="Los Angeles" style="width:100%"> -->
-        </div>
-
-        <div class="item">
-            <!-- <img src="img/slide-2.jpg" alt="Chicago" style="width:100%"> -->
-        </div>
-
-        <div class="item ">
-            <!-- <img src="img/slide-3.jpg" alt="New york" style="width:100%"> -->
-        </div>
-        <div class="item">
-            <!-- <img src="img/slide-4.jpg" alt="New york" style="width:100%"> -->
-        </div>
-    </div>
-
-    <!--Left and right controls-->
-    <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
-    <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-    <!--<span class="sr-only">Previous</span>-->
-    <!--</a>-->
-    <!--<a class="right carousel-control" href="#myCarousel" data-slide="next">-->
-    <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
-    <!--<span class="sr-only">Next</span>-->
-    <!--</a>-->
+<div id="slick-slider" class="slick-slider">
+    <div class="item item--1"></div>
+    <div class="item item--2"></div>
+    <div class="item item--3"></div>
+    <div class="item item--4"></div>
 </div>
+
+<div id="loader">
+    <div class="bCircle stoss" id="stoss" >
+        <div class="sCircle"></div>
+        <span id="stossTxt">Stoss</span>
+    </div>
+    <div id="line1">
+    </div>
+    <div class="bCircle schwende" id="schwende">
+        <div class="sCircle"></div>
+        <span id="schwendeTxt">Schwende</span>
+    </div>
+    <div id="line2">
+    </div>
+    <div class="bCircle notkersegg" id="notkersegg">
+        <div class="sCircle"></div>
+        <span id="notkerseggTxt">Notkersegg</span>
+    </div>
+    <div id="line3">
+    </div>
+    <div class="bCircle schwarzerBaren" id="schwarzerBaren">
+        <div class="sCircle"></div>
+        <span id="schwarzerBarenTxt">Schwarzer&nbsp;Baren</span>
+    </div>
+</div>
+   
+
 <img src="img/poweredby.png" alt="Powered by" class="powered">
 <img src="img/phones.png" alt="Phones" class="phones">
 <img src="img/iphone-mockup.png" alt="iPhone" class="iphone">
@@ -100,7 +96,6 @@
 <section class="main container">
     <div class="row">
         <div class="col-12">
-            <img src="img/slider-bar.png" alt="slide bar" class="slide-bar">
             <div id="modalfade" style="display:none;">
                     <div class="modal-f">
                             <i class="fa fa-times close-modal" aria-hidden="true"></i>
@@ -388,21 +383,144 @@
 <script src="js/routes.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/modal.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script>
 $(document).ready(function() {
-$('.carousel-indicators li').click(function(e){
-        e.stopPropagation();
-        var goTo = $(this).data('slide-to');
-        $('.carousel-inner .item').each(function(index){
-            if($(this).data('id') == goTo){
-                goTo = index;
-                return false;
-            }
-        });
-
-        $('#gallery-carousel').carousel(goTo); 
+    $('.slick-slider').slick({
+        slidesToShow : 1,
+        slidesToScroll : 1,
+        dots : false,
+        arrows : false,
+        autoplay : true,
+        swipe : false,
+        autoplaySpeed : 8250,
+        pauseOnFocus : false,
+        pauseOnHover : false,
+        cssEase: 'ease-in',
+        
     });
-})
+    $('#stoss').on("click", function(e) {
+        e.stopPropagation;
+        $('.slick-slider').slick('slickGoTo',0);
+    });
+    $('#schwende').on("click", function(e) {
+        e.stopPropagation;
+        $('.slick-slider').slick('slickGoTo',1);
+    });
+    $('#notkersegg').on("click", function(e) {
+        e.stopPropagation;
+        $('.slick-slider').slick('slickGoTo',2);
+    });
+    $('#schwarzerBaren').on("click", function(e) {
+        e.stopPropagation;
+        $('.slick-slider').slick('slickGoTo',3);
+    });
+    var insert = "<div class='bLeft'><span class='bBottom'></span></div>";
+
+	for(g=0; g <= 20; g++) {
+		$('#line1').append(insert);
+	}
+	for(g=0; g <= 20; g++) {
+		$('#line2').append(insert);
+	}
+	for(g=0; g <= 20; g++) {
+		$('#line3').append(insert);
+	}
+
+
+function start() {
+		$('.bCircle').removeClass('bCircle2');
+		$('.sCircle').removeClass('sCircle2');
+
+		var bLeft = $('.bLeft');
+		var bBottom = $('.bBottom');
+		i=-1;
+
+		$('.bCircle').click(function()  {
+			$('.bCircle').removeClass('bCircle2');
+			$('.sCircle').removeClass('sCircle2');
+			var takeId = this.id;
+			$('.'+takeId).addClass('bCircle2');
+			$('.'+takeId + ' div').addClass('sCircle2');
+			for(b=0; b < 63; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+
+			if(takeId == 'stoss') {
+				i=-1;
+			} else if(takeId == 'schwende') {
+				i=20;
+			} else if(takeId == 'notkersegg') {
+			 	i=41;
+			} else if(takeId == 'schwarzerBaren') {
+			 	i=62;
+			}
+
+		});
+		
+		load = setInterval(function() {
+			 	i++;
+		   		$(bLeft[i]).addClass('red');
+		   		$(bBottom[i]).addClass('red2');
+		   		
+		   		if ( i == bLeft.length+21) {
+					clearInterval(load);
+				}
+
+				if(i == 84) {
+					start();
+				}
+
+				if(i == 0) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#stossTxt').addClass('redTxt');
+					$('#stoss').addClass('bCircle2');
+					$('#stoss  div').addClass('sCircle2');
+				} else if(i == 21) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#schwendeTxt').addClass('redTxt');
+					$('.bCircle').removeClass('bCircle2');
+					$('.sCircle').removeClass('sCircle2');
+					$('#schwende').addClass('bCircle2');
+					$('#schwende  div').addClass('sCircle2');
+					
+					for(b=0; b < 21; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+
+				} else if(i == 42) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#notkerseggTxt').addClass('redTxt');
+					$('.bCircle').removeClass('bCircle2');
+					$('.sCircle').removeClass('sCircle2');
+					$('#notkersegg').addClass('bCircle2');
+					$('#notkersegg  div').addClass('sCircle2');
+					
+					for(b=0; b < 42; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+				}
+				else if(i == 63) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#schwarzerBarenTxt').addClass('redTxt');
+					$('.bCircle').removeClass('bCircle2');
+					$('.sCircle').removeClass('sCircle2');
+					$('#schwarzerBaren').addClass('bCircle2');
+					$('#schwarzerBaren  div').addClass('sCircle2');
+					
+					for(b=0; b < 63; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+				}
+			}, 300);
+}
+
+start();
+});
 </script>
 </body>
 </html>

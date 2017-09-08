@@ -1,6 +1,8 @@
 @import '_helpers/_vars',
         '_helpers/_mixin',
         '_vendors/_reset',
+        '_vendors/_slick',
+        '_vendors/_slick-theme',
         '_moduls/_grid',
         '_moduls/_colors',
         '_moduls/_typography';
@@ -17,6 +19,7 @@ body {
         '_partials/_accordion',
         '_partials/_contact-form',
         '_partials/_modal',
+        '_partials/_slider',
         '_partials/_footer';
 
 .full-width {
@@ -58,13 +61,14 @@ body {
     z-index: 6001;
     @include position(relative);
 }
+
 #logostart {
--webkit-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-width: 450px;
-text-align: center;
-position: fixed;
-top: 50%;
-left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index:5990;
 }
 @import '_partials/_media-queries';
