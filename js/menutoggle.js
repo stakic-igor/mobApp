@@ -1,8 +1,7 @@
 var slideBar = $('.slide-bar');
 $('.hamburger').on('click', function() {
-    $('#slick-slider').css({"visibility":"visible", "filter":"blur(20px)"});
-    $('.slick-dots').css("opacity",0);
-    $('.dots-names').css("opacity",0);
+    $('#slider').css({"visibility":"visible", "filter":"blur(20px)"});
+   
     var pageTitle = $('.sub-page__header');
     var modal = $('.modal-f');
     var logoshow = $('#logoshow');
@@ -18,9 +17,7 @@ $('.hamburger').on('click', function() {
         logoshow.hide();
         slideBar.hide();
     } else {
-        $('#slick-slider').css({"visibility":"visible", "filter":"blur(0)"});
-        $('.slick-dots').css("opacity",1);
-        $('.dots-names').css("opacity",1);
+        $('#slider').css({"visibility":"visible", "filter":"blur(0)"});
         pageTitle.hide();
         logoImg.hide();
         modal.show();

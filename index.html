@@ -13,7 +13,8 @@
 	<meta property="og:url" content="http://fensterplatz.ch/" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/5ff40b4469.js"></script>
 <script>
@@ -40,18 +41,36 @@
 
 </head>
 <body>
-<div id="slick-slider" class="slick-slider">
-    <div class="item item--1"></div>
-    <div class="item item--2"></div>
-    <div class="item item--3"></div>
-    <div class="item item--4"></div>
-</div>
 
-<div class="dots-names">
-    <span>Stoss</span>
-    <span>Schwende</span>
-    <span>Notkersegg</span>
-    <span>Schwarzen Bären</span>
+<div id="loader">
+    <div class="bCircle stoss" id="stoss" >
+        <div class="sCircle"></div>
+        <span id="stossTxt">Stoss</span>
+    </div>
+    <div id="line1">
+    </div>
+    <div class="bCircle schwende" id="schwende">
+        <div class="sCircle"></div>
+        <span id="schwendeTxt">Schwende</span>
+    </div>
+    <div id="line2">
+    </div>
+    <div class="bCircle notkersegg" id="notkersegg">
+        <div class="sCircle"></div>
+        <span id="notkerseggTxt">Notkersegg</span>
+    </div>
+    <div id="line3">
+    </div>
+    <div class="bCircle schwarzerBaren" id="schwarzerBaren">
+        <div class="sCircle"></div>
+        <span id="schwarzerBarenTxt">Schwarzer&nbsp;Baren</span>
+    </div>
+</div>
+<div id="slider" >
+    <div id="i1" class="img img--1"><h2>Stoss</h2></div>
+    <div id="i2" class="img img--2"><h2>Schwende</h2></div>
+    <div id="i3" class="img img--2"><h2>Notkersegg</h2></div>
+    <div id="i4" class="img img--3"><h2>Schwarzer Baren</h2></div>
 </div>
    
 
@@ -363,28 +382,131 @@
 <script src="js/routes.js"></script>
 <script src="js/accordion.js"></script>
 <script src="js/modal.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
 <script>
+
 $(document).ready(function() {
-    $('.slick-slider').slick({
-        slidesToShow : 1,
-        slidesToScroll : 1,
-        dots : true,
-        arrows : false,
-        autoplay : true,
-        autoplaySpeed : 5000,
-        pauseOnFocus : false,
-        pauseOnHover : false,
-        
-    });
-    $('#slick-slide00').addClass('in-progress');
-    $('.slick-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        $('.slick-dots li').removeClass('in-progress');
-        $('#slick-slide0'+nextSlide).addClass('in-progress');
-    });
-    $('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-    });
+
+	var insert = "<div class='bLeft'><span class='bBottom'></span></div>";
+
+	for(g=0; g <= 20; g++) {
+		$('#line1').append(insert);
+	}
+	for(g=0; g <= 20; g++) {
+		$('#line2').append(insert);
+	}
+	for(g=0; g <= 20; g++) {
+		$('#line3').append(insert);
+	}
+
+
+function start() {
+		$('.bCircle').removeClass('bCircle2');
+		$('.sCircle').removeClass('sCircle2');
+
+		var bLeft = $('.bLeft');
+		var bBottom = $('.bBottom');
+		i=-1;
+
+		$('.bCircle').click(function()  {
+			$('.bCircle').removeClass('bCircle2');
+			$('.sCircle').removeClass('sCircle2');
+			var takeId = this.id;
+			$('.'+takeId).addClass('bCircle2');
+			$('.'+takeId + ' div').addClass('sCircle2');
+			for(b=0; b < 63; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+
+			if(takeId == 'stoss') {
+				i=-1;
+			} else if(takeId == 'schwende') {
+				i=20;
+			} else if(takeId == 'notkersegg') {
+			 	i=41;
+			} else if(takeId == 'schwarzerBaren') {
+			 	i=62;
+			}
+
+		});
+		
+		load = setInterval(function() {
+			 	i++;
+		   		$(bLeft[i]).addClass('red');
+		   		$(bBottom[i]).addClass('red2');
+		   		
+		   		if ( i == bLeft.length+21) {
+					clearInterval(load);
+				}
+
+				if(i == 84) {
+					start();
+				}
+
+				if(i == 0) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#stossTxt').addClass('redTxt');
+					$('#stoss').addClass('bCircle2');
+					$('#stoss  div').addClass('sCircle2');
+					$('.img h2').hide();
+					$('.img').fadeOut(1200);
+					$('#i1').show('slide',{ direction: "right" },900);
+					$('#i1 h2').show();
+
+				} else if(i == 21) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#schwendeTxt').addClass('redTxt');
+					$('.bCircle').removeClass('bCircle2');
+					$('.sCircle').removeClass('sCircle2');
+					$('#schwende').addClass('bCircle2');
+					$('#schwende  div').addClass('sCircle2');
+					$('.img h2').hide();
+					$('.img').fadeOut(1200);
+					$('#i2').show('slide', { direction: "right" },900);
+					$('#i2 h2').show();
+					for(b=0; b < 21; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+
+				} else if(i == 42) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#notkerseggTxt').addClass('redTxt');
+					$('.bCircle').removeClass('bCircle2');
+					$('.sCircle').removeClass('sCircle2');
+					$('#notkersegg').addClass('bCircle2');
+					$('#notkersegg  div').addClass('sCircle2');
+					$('.img h2').hide();
+					$('.img').fadeOut(1200);
+					$('#i3').show('slide', { direction: "right" },900);
+					$('#i3 h2').show();
+					for(b=0; b < 42; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+				}
+				else if(i == 63) {
+					$('.bCircle span').removeClass('redTxt');
+					$('#schwarzerBarenTxt').addClass('redTxt');
+					$('.bCircle').removeClass('bCircle2');
+					$('.sCircle').removeClass('sCircle2');
+					$('#schwarzerBaren').addClass('bCircle2');
+					$('#schwarzerBaren  div').addClass('sCircle2');
+					$('.img h2').hide();
+					$('.img').fadeOut(1200);
+					$('#i4').show('slide',{ direction: "right" },900);
+					$('#i4 h2').show();
+					for(b=0; b < 63; b++) {
+						$(bLeft[b]).removeClass('red');
+						$(bBottom[b]).removeClass('red2');
+					}
+				}
+			}, 300);
+}
+
+start();
 });
+
 </script>
 </body>
 </html>
