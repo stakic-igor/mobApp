@@ -38,7 +38,7 @@
 		a.appendChild(r);
 	    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 <div id="slick-slider" class="slick-slider">
@@ -355,6 +355,9 @@
                                         <label for="note" class="label-block">Ihre Mitteilung</label>
                                         <textarea name="note" id="note" class="input-textarea"></textarea>
                                     </div><!-- form group -->
+                                    <div class="form-group-f">
+                                        <div class="g-recaptcha" data-sitekey="6LdNBjAUAAAAAAAC2oGDkug-rSaaNzm4e22dgIZV"></div>    
+                                    </div><!-- end form group -->
                                     <div class="form-group-f btn-group-f">
                                         <input type="submit" value="Senden" class="btn-f btn__submit">
                                         <span id='error' class="label-block" style='color:red'> </span>
