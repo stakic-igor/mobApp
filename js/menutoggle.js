@@ -21,7 +21,7 @@ $('.hamburger').on('click', function() {
         $('#loader').css("opacity",1);
         pageTitle.hide();
         logoImg.hide();
-        modal.show();
+        modal.hide();
         logoshow.show();
         slideBar.show();
         $("#app, #touren, #tickets, #faq, #kontakt").removeClass('main-menu--active');

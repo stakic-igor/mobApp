@@ -1,10 +1,10 @@
 $(document).ready( function() {
-    $('#logostart').delay(3000).fadeOut();
-  });
+  $('#logostart').delay(1500).fadeOut();
+});
 $(document).ready( function() {
-    $('#modalfade').delay(4000).fadeIn();
-  });
+  $('.modal-f').delay(2000).fadeIn();
+});
 
 $('.close-modal').click(function(){
-  $('#modalfade').delay(1000).fadeOut();
-})
+$('.modal-f').delay(100).fadeOut();
+});
