@@ -1,8 +1,8 @@
 $(document).ready( function() {
-  $('#logostart').delay(1500).fadeOut();
+  $('#logostart').delay(2000).fadeOut(2000);
 });
 $(document).ready( function() {
-  $('.modal-f').delay(2000).fadeIn();
+  $('.modal-f').fadeIn(5000);
 });
 
 $('.close-modal').click(function(){

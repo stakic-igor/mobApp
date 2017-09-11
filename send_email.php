@@ -4,7 +4,7 @@ $email_from = "no-reply@fensterplatz.ch";   //Absender falls keiner angegeben wu
 $sendermail_antwort = true;      //E-Mail Adresse des Besuchers als Absender. false= Nein ; true = Ja
 $name_von_emailfeld = "Email";   //Feld in der die Absenderadresse steht
  
-$empfaenger = "infos@fensterplatz.ch"; //Empfänger-Adresse
+$empfaenger = "infos@fensterplatz.ch; //Empfänger-Adresse
 $mail_cc = ""; //CC-Adresse, diese E-Mail-Adresse bekommt einer weitere Kopie
 $betreff = "Neue Kontaktanfrage"; //Betreff der Email
  
@@ -59,7 +59,12 @@ if (!empty($mail_cc)) {
    $header .= "Cc: $mail_cc";
 }
  
- 
+ if(($_POST['code']) == $_SESSION['code']) { 
+  $code = $_POST['code'];
+  } else { 
+  $error .= "Captcha wurde falsch eingegeben.";    
+}
+
 $mail_senden = mail($empfaenger,$betreff,$msg,$header);
  
  
